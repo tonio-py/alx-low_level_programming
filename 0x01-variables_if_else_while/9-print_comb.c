@@ -10,14 +10,13 @@
 int main(void)
 {
 	int x = 0;
-	char text[100];
 
 	while (x < 10)
 	{
-		sprintf(text, "%d", x);
-		putchar(text[0]);
 
-		if (text[0] != '9')
+		putchar((x + '0'));
+
+		if ((x + '0') != '9')
 		{
 			putchar(',');
 			putchar(' ');
